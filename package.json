@@ -9,7 +9,7 @@
     "concurrently": "^8.0.1"
   },
   "scripts": {
-    "frontend": "",
+    "frontend": "(cd ./packages/frontend && yarn run start)",
     "backend": "(cd ./packages/backend && yarn nodemon app)",
     "server": "concurrently \"yarn run frontend\" \"yarn run backend\""
   },
